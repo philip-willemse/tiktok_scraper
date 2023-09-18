@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Scraper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TikTok Scraper</h1>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" id="country" placeholder="Enter Country">
+        </div>
+        <div class="form-group">
+            <label for="min-followers">Min Followers:</label>
+            <input type="number" id="min-followers" placeholder="Minimum Followers">
+        </div>
+        <div class="form-group">
+            <label for="max-followers">Max Followers:</label>
+            <input type="number" id="max-followers" placeholder="Maximum Followers">
+        </div>
+        <div class="form-group">
+            <label for="tags">Tags:</label>
+            <input type="text" id="tags" placeholder="Enter Tags">
+        </div>
+        <button onclick="fetchData()">Fetch Data</button>
+        <a id="download-link" href="/download_csv" style="display: none;">Download CSV</a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
