@@ -1,0 +1,185 @@
+from flask import Flask, jsonify, request, send_from_directory
+import mysql.connector
+import requests
+import json
+import logging
+
+
+
+
+
+
+
+app = Flask(__name__, static_folder="../frontend", static_url_path="/")
+
+# Configure logging
+logging.basicConfig(filename='app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Constants for TikAPI integration
+BASE_URL = "https://api.tikapi.io"
+HEADERS = {
+    "X-API-KEY": "q9D43JnetinWD5JIwhfiQaHJACzKkx7JHBmCmCJgv8f8XHZn",
+    "Client-Id": "c_4Y8MUIXBOR",
+    "Api-Key": "q9D43JnetinWD5JIwhfiQaHJACzKkx7JHBmCmCJgv8f8XHZn"
+}
+JSON_FILE = "tiktok_data.json"
+
+def fetch_data_from_tikapi(country=None, tags=None):
+    # Check if tags are provided
+    if not tags:
+        logging.error("Tags not provided.")
+        return []
+
+    search_endpoint = f"{BASE_URL}/public/search/users"
+    params = {
+        "query": tags,
+    }
+    if country:
+        params["country"] = country  # Add country parameter if provided
+
+    logging.info("API Request Params: %s", params)
+
+    response = requests.get(search_endpoint, headers=HEADERS, params=params)
+    logging.info("API Response Status Code: %d", response.status_code)
+
+    if response.status_code != 200:
+        logging.error("API Error Response: %s", response.text)
+        return []
+
+    data = response.json()
+
+    return data
+
+
+
+def insert_data_to_db(user_list):
+    mycursor = None
+    mydb = None
+    try:
+        mydb = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="TIKTOKPASS123",
+            database="tiktok"
+        )
+        mycursor = mydb.cursor()
+        records_inserted = 0
+
+        for entry in user_list:
+            if isinstance(entry, dict) and "user_info" in entry:
+                user_info = entry.get("user_info", {})
+                if user_info:
+                    follower_count = user_info.get("follower_count", 0)
+                    nickname = user_info.get("nickname", "")
+                    signature = user_info.get("signature", "")
+                    uid = user_info.get("uid", "")
+                    unique_id = user_info.get("unique_id", "")
+
+                    sql = "INSERT INTO tiktok_users (follower_count, nickname, signature, uid, unique_id) VALUES (%s, %s, %s, %s, %s)"
+                    val = (follower_count, nickname, signature, uid, unique_id)
+
+                    mycursor.execute(sql, val)
+                    mydb.commit()
+                    records_inserted += 1
+
+        logging.info("%d records inserted.", records_inserted)
+
+    except Exception as e:
+        logging.error("Error inserting data to the database: %s", str(e))
+
+    finally:
+        if mycursor:
+            mycursor.close()
+        if mydb:
+            mydb.close()
+
+
+
+
+
+
+app = Flask(__name__, static_folder="../frontend", static_url_path="/")
+
+# Configure logging
+logging.basicConfig(filename='app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Constants for TikAPI integration
+BASE_URL = "https://api.tikapi.io"
+HEADERS = {
+    "X-API-KEY": "q9D43JnetinWD5JIwhfiQaHJACzKkx7JHBmCmCJgv8f8XHZn",
+    "Client-Id": "c_4Y8MUIXBOR",
+    "Api-Key": "q9D43JnetinWD5JIwhfiQaHJACzKkx7JHBmCmCJgv8f8XHZn"
+}
+JSON_FILE = "tiktok_data.json"
+
+def fetch_data_from_tikapi(country=None, tags=None):
+    # Check if tags are provided
+    if not tags:
+        logging.error("Tags not provided.")
+        return []
+
+    search_endpoint = f"{BASE_URL}/public/search/users"
+    params = {
+        "query": tags,
+    }
+    if country:
+        params["country"] = country  # Add country parameter if provided
+
+    logging.info("API Request Params: %s", params)
+
+    response = requests.get(search_endpoint, headers=HEADERS, params=params)
+    logging.info("API Response Status Code: %d", response.status_code)
+
+    if response.status_code != 200:
+        logging.error("API Error Response: %s", response.text)
+        return []
+
+    data = response.json()
+
+    return data
+
+
+def insert_data_to_db(user_list):
+    try:
+        mydb = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="TIKTOKPASS123",
+    database="tiktok"
+        )
+
+    except Exception as e:
+        logging.error("Error inserting data to the database: %s", str(e))
+
+    finally:
+        mycursor.close()
+        mydb.close()
+
+@app.route('/fetch_data', methods=['POST'])
+def fetch_data_endpoint():
+    country = request.json.get('country')
+    tags = request.json.get('tags')
+    logging.info("Tags received: %s", tags)
+    data = fetch_data_from_tikapi(country, tags)
+    
+    try:
+        with open(JSON_FILE, 'w') as file:
+            json.dump(data, file, indent=4)
+    except Exception as e:
+        logging.error("Error writing to JSON: %s", str(e))
+        return jsonify({"error": "Error writing to JSON"})
+    
+    insert_data_to_db(data)
+
+    return jsonify({"message": "Data fetched and inserted successfully!", "file": JSON_FILE})
+
+@app.route('/download_json', methods=['GET'])
+def download_json():
+    return send_from_directory('.', JSON_FILE, as_attachment=True)
+
+@app.route('/', methods=['GET'])
+def index():
+    return app.send_static_file('index.html')
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
