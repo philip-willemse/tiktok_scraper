@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Data from Database</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Follower Count</th>
+                <th>Nickname</th>
+                <th>Signature</th>
+                <th>UID</th>
+                <th>Unique ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in data %}
+            <tr>
+                <td>{{ user.follower_count }}</td>
+                <td>{{ user.nickname }}</td>
+                <td>{{ user.signature }}</td>
+                <td>{{ user.uid }}</td>
+                <td>{{ user.unique_id }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
