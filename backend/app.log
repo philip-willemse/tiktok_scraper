@@ -1,0 +1,806 @@
+2023-09-26 08:58:30,040 - INFO - The CSRF token is missing.
+2023-09-26 09:02:17,922 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 09:02:18,721 - DEBUG - https://api.sendpulse.com:443 "POST /oauth/access_token HTTP/1.1" 200 None
+2023-09-26 09:02:18,724 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 09:02:19,598 - DEBUG - https://api.sendpulse.com:443 "POST /smtp/emails HTTP/1.1" 200 None
+2023-09-26 09:02:19,601 - INFO - SendPulse API Response: {'result': True, 'id': 's1kzjv-0ycrhc-30'}
+2023-09-26 09:02:36,887 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 09:02:37,694 - DEBUG - https://api.sendpulse.com:443 "POST /oauth/access_token HTTP/1.1" 200 None
+2023-09-26 09:02:37,697 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 09:02:38,755 - DEBUG - https://api.sendpulse.com:443 "POST /smtp/emails HTTP/1.1" 200 None
+2023-09-26 09:02:38,757 - INFO - SendPulse API Response: {'result': True, 'id': 's1kzke-11nchn-pu'}
+2023-09-26 09:19:34,348 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 09:19:35,296 - DEBUG - https://api.sendpulse.com:443 "POST /oauth/access_token HTTP/1.1" 200 None
+2023-09-26 09:19:35,300 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 09:19:36,176 - DEBUG - https://api.sendpulse.com:443 "POST /smtp/emails HTTP/1.1" 200 None
+2023-09-26 09:19:36,178 - INFO - SendPulse API Response: {'result': True, 'id': 's1l0co-1a4l6p-ck'}
+2023-09-26 12:32:39,548 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 12:32:40,531 - DEBUG - https://api.sendpulse.com:443 "POST /oauth/access_token HTTP/1.1" 200 None
+2023-09-26 12:32:40,535 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 12:32:41,395 - DEBUG - https://api.sendpulse.com:443 "POST /smtp/emails HTTP/1.1" 200 None
+2023-09-26 12:32:41,397 - INFO - SendPulse API Response: {'result': True, 'id': 's1l9ah-0einub-qv'}
+2023-09-26 13:23:40,733 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 102, in login
+    if login_is_successful:  # Replace with your actual logic
+NameError: name 'login_is_successful' is not defined
+2023-09-26 13:24:00,349 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 102, in login
+    if login_is_successful:  # Replace with your actual logic
+NameError: name 'login_is_successful' is not defined
+2023-09-26 13:27:50,732 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 102, in login
+    if login_is_successful:  # Replace with your actual logic
+NameError: name 'login_is_successful' is not defined
+2023-09-26 13:30:30,781 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 104, in login
+    hashed_password_from_database = get_hashed_password_from_database(username)
+NameError: name 'get_hashed_password_from_database' is not defined
+2023-09-26 13:43:46,048 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 115, in login_page
+    return render_template('login.html')
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/login.html", line 39, in top-level template code
+    <a href="{{ url_for('register') }}"><button type="button">Register</button></a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'register'. Did you mean 'login_page' instead?
+2023-09-26 13:43:47,792 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 115, in login_page
+    return render_template('login.html')
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/login.html", line 39, in top-level template code
+    <a href="{{ url_for('register') }}"><button type="button">Register</button></a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'register'. Did you mean 'login_page' instead?
+2023-09-26 13:43:48,362 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 115, in login_page
+    return render_template('login.html')
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/login.html", line 39, in top-level template code
+    <a href="{{ url_for('register') }}"><button type="button">Register</button></a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'register'. Did you mean 'login_page' instead?
+2023-09-26 13:44:26,411 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 116, in login_page
+    return render_template('login.html')
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/login.html", line 39, in top-level template code
+    <a href="{{ url_for('register') }}"><button type="button">Register</button></a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'register'. Did you mean 'login_page' instead?
+2023-09-26 13:45:50,439 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 115, in login_page
+    return render_template('login.html')
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/login.html", line 39, in top-level template code
+    <a href="{{ url_for('register') }}"><button type="button">Register</button></a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'register'. Did you mean 'login_page' instead?
+2023-09-26 13:46:22,728 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 115, in login_page
+    return render_template('login.html')
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/login.html", line 39, in top-level template code
+    <a href="{{ url_for('register') }}"><button type="button">Register</button></a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'register'. Did you mean 'login_page' instead?
+2023-09-26 13:49:31,762 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 129, in login
+    return redirect(url_for('dashboard'))
+  File "/usr/local/lib/python3.10/dist-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'static' instead?
+2023-09-26 14:04:50,877 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 129, in login
+    return redirect(url_for('dashboard'))
+  File "/usr/local/lib/python3.10/dist-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'static' instead?
+2023-09-26 14:05:13,453 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 14:05:14,406 - DEBUG - https://api.sendpulse.com:443 "POST /oauth/access_token HTTP/1.1" 200 None
+2023-09-26 14:05:14,409 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 14:05:15,249 - DEBUG - https://api.sendpulse.com:443 "POST /smtp/emails HTTP/1.1" 200 None
+2023-09-26 14:05:15,251 - INFO - SendPulse API Response: {'result': True, 'id': 's1ldkr-1df93a-cb'}
+2023-09-26 14:05:52,540 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 129, in login
+    return redirect(url_for('dashboard'))
+  File "/usr/local/lib/python3.10/dist-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'static' instead?
+2023-09-26 14:10:06,800 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 129, in login
+    return redirect(url_for('dashboard'))  # Redirect to the 'dashboard' route
+  File "/usr/local/lib/python3.10/dist-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'static' instead?
+2023-09-26 14:10:14,942 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 129, in login
+    return redirect(url_for('dashboard'))  # Redirect to the 'dashboard' route
+  File "/usr/local/lib/python3.10/dist-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'static' instead?
+2023-09-26 14:21:40,667 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 129, in login
+    return redirect(url_for('dashboard'))  # Redirect to the 'dashboard' route
+  File "/usr/local/lib/python3.10/dist-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'static' instead?
+2023-09-26 14:25:40,790 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 63, in login
+    hashed_password_from_database = get_hashed_password_from_database(username)
+NameError: name 'get_hashed_password_from_database' is not defined
+2023-09-26 14:26:45,162 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 63, in login
+    hashed_password_from_database = get_hashed_password_from_database(username)
+NameError: name 'get_hashed_password_from_database' is not defined
+2023-09-26 14:35:56,249 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 104, in login
+    return redirect(url_for('dashboard'))  # Redirect to the 'dashboard' route
+  File "/usr/local/lib/python3.10/dist-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'static' instead?
+2023-09-26 14:36:32,669 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 104, in login
+    return redirect(url_for('dashboard'))  # Redirect to the 'dashboard' route
+  File "/usr/local/lib/python3.10/dist-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'dashboard'. Did you mean 'static' instead?
+2023-09-26 14:44:52,434 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 114, in dashboard
+    return render_template('dashboard.html')
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/dashboard.html", line 11, in top-level template code
+    <h1>Welcome, {{ user.username }}</h1>
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'user' is undefined
+2023-09-26 14:48:30,629 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 116, in dashboard
+    return render_template('dashboard.html', user=user_data)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/dashboard.html", line 44, in top-level template code
+    <a href="{{ url_for('logout') }}">Logout</a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'logout'. Did you mean 'login' instead?
+2023-09-26 15:04:48,600 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 15:04:49,391 - DEBUG - https://api.sendpulse.com:443 "POST /oauth/access_token HTTP/1.1" 200 None
+2023-09-26 15:04:49,394 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 15:04:50,412 - DEBUG - https://api.sendpulse.com:443 "POST /smtp/emails HTTP/1.1" 200 None
+2023-09-26 15:04:50,414 - INFO - SendPulse API Response: {'result': True, 'id': 's1lgc2-0ggeya-mk'}
+2023-09-26 15:10:17,299 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 15:10:18,088 - DEBUG - https://api.sendpulse.com:443 "POST /oauth/access_token HTTP/1.1" 200 None
+2023-09-26 15:10:18,091 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 15:10:18,939 - DEBUG - https://api.sendpulse.com:443 "POST /smtp/emails HTTP/1.1" 200 None
+2023-09-26 15:10:18,940 - INFO - SendPulse API Response: {'result': True, 'id': 's1lgl6-07fyu5-3r'}
+2023-09-26 15:16:48,102 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 15:16:48,910 - DEBUG - https://api.sendpulse.com:443 "POST /oauth/access_token HTTP/1.1" 200 None
+2023-09-26 15:16:48,913 - DEBUG - Starting new HTTPS connection (1): api.sendpulse.com:443
+2023-09-26 15:16:49,755 - DEBUG - https://api.sendpulse.com:443 "POST /smtp/emails HTTP/1.1" 200 None
+2023-09-26 15:16:49,757 - INFO - SendPulse API Response: {'result': True, 'id': 's1lgw1-0k9qey-bp'}
+2023-09-26 15:28:07,267 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 120, in dashboard
+    user_email = get_user_email(username)  # Implement this function to fetch user email
+NameError: name 'get_user_email' is not defined
+2023-09-26 15:36:34,553 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 145, in dashboard
+    return render_template('dashboard.html', username=username, user_email=user_email)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/dashboard.html", line 43, in top-level template code
+    <form method="POST" action="{{ url_for('scrape_data') }}">
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'scrape_data'. Did you mean 'static' instead?
+2023-09-26 15:40:01,462 - INFO - The CSRF token is missing.
+2023-09-26 15:45:56,279 - INFO - The CSRF token is missing.
+2023-09-26 15:53:51,981 - INFO - The CSRF token is missing.
+2023-09-26 16:37:34,995 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 145, in dashboard
+    # Fetch the scraped TikTok data from the JSON file
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/dashboard.html", line 65, in top-level template code
+    <a href="{{ url_for('logout') }}">Logout</a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'logout'. Did you mean 'login' instead?
+2023-09-26 16:38:00,283 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 145, in dashboard
+    return render_template('dashboard.html', username=username, user_email=user_email)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/usr/local/lib/python3.10/dist-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.10/dist-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/tiktok_scraper/backend/templates/dashboard.html", line 65, in top-level template code
+    <a href="{{ url_for('logout') }}">Logout</a>
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/usr/local/lib/python3.10/dist-packages/werkzeug/routing/map.py", line 950, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'logout'. Did you mean 'login' instead?
+2023-09-26 16:44:13,218 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 149, in dashboard
+    scraped_data = json.load(f)
+NameError: name 'json' is not defined
+2023-09-26 21:54:33,601 - INFO - The CSRF token is missing.
+2023-09-26 22:00:55,389 - INFO - The CSRF token is missing.
+2023-09-26 22:09:49,529 - ERROR - Exception on /scrape_data [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 158, in scrape_data
+    if not validate_csrf_token(csrf_token):
+NameError: name 'validate_csrf_token' is not defined
+2023-09-26 22:12:36,031 - ERROR - Exception on /scrape_data [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 158, in scrape_data
+    if not validate_csrf_token(csrf_token):
+NameError: name 'validate_csrf_token' is not defined
+2023-09-26 23:02:15,200 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 150, in dashboard
+    collected_data = fetch_collected_data(username)  # Implement this function
+NameError: name 'fetch_collected_data' is not defined
+2023-09-26 23:02:59,789 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 150, in dashboard
+    collected_data = fetch_collected_data(username)  # Implement this function
+NameError: name 'fetch_collected_data' is not defined
+2023-09-26 23:04:08,789 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 165, in dashboard
+    collected_data = fetch_collected_data(username)  # Implement this function
+  File "/tiktok_scraper/backend/app.py", line 142, in fetch_collected_data
+    connection = pymysql.connect(host=db_host, user=db_user, password=db_password, database=db_name)
+NameError: name 'db_host' is not defined
+2023-09-26 23:05:53,697 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 165, in dashboard
+    collected_data = fetch_collected_data(username)  # Implement this function
+  File "/tiktok_scraper/backend/app.py", line 142, in fetch_collected_data
+    connection = pymysql.connect(host=db_host, user=db_user, password=db_password, database=db_name)
+NameError: name 'db_host' is not defined
+2023-09-26 23:08:14,754 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 166, in dashboard
+    collected_data = fetch_collected_data(username, db_host, db_user, db_password, db_name)
+NameError: name 'db_host' is not defined
+2023-09-26 23:09:49,167 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 172, in dashboard
+    collected_data = fetch_collected_data(username, db_host, db_user, db_password, db_name)
+  File "/tiktok_scraper/backend/app.py", line 142, in fetch_collected_data
+    connection = pymysql.connect(host=db_host, user=db_user, password=db_password, database=db_name)
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 633, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 921, in _request_authentication
+    auth_packet = self._process_auth(plugin_name, auth_packet)
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 1018, in _process_auth
+    pkt = self._read_packet()
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+2023-09-26 23:11:29,156 - ERROR - Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.10/dist-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/tiktok_scraper/backend/app.py", line 172, in dashboard
+    collected_data = fetch_collected_data(username, db_host, db_user, db_password, db_name)
+  File "/tiktok_scraper/backend/app.py", line 142, in fetch_collected_data
+    connection = pymysql.connect(host=db_host, user=db_user, password=db_password, database=db_name)
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 633, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 921, in _request_authentication
+    auth_packet = self._process_auth(plugin_name, auth_packet)
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 1018, in _process_auth
+    pkt = self._read_packet()
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.10/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+2023-09-26 23:31:31,010 - DEBUG - Starting new HTTPS connection (1): api.tikapi.io:443
+2023-09-26 23:31:36,304 - DEBUG - https://api.tikapi.io:443 "GET /public/search/users?query=fortnite&country=us HTTP/1.1" 200 None
+2023-09-26 23:37:28,067 - DEBUG - Starting new HTTPS connection (1): api.tikapi.io:443
+2023-09-26 23:37:30,833 - DEBUG - https://api.tikapi.io:443 "GET /public/search/users?query=fortnite&country=us HTTP/1.1" 200 None
+2023-09-26 23:39:24,743 - DEBUG - Starting new HTTPS connection (1): api.tikapi.io:443
+2023-09-26 23:39:40,409 - DEBUG - https://api.tikapi.io:443 "GET /public/search/users?query=fortnite&country=us HTTP/1.1" 200 None
+2023-09-26 23:45:04,064 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.43.1:5000
+2023-09-26 23:45:04,064 - INFO - [33mPress CTRL+C to quit[0m
+2023-09-26 23:45:04,066 - INFO -  * Restarting with stat
+2023-09-26 23:45:04,347 - WARNING -  * Debugger is active!
+2023-09-26 23:45:04,442 - INFO -  * Debugger PIN: 128-283-414
+2023-09-26 23:45:36,496 - DEBUG - Starting new HTTPS connection (1): api.tikapi.io:443
+2023-09-26 23:45:45,681 - DEBUG - https://api.tikapi.io:443 "GET /public/search/users?query=revlon&country=us HTTP/1.1" 200 None
+2023-09-26 23:50:04,560 - DEBUG - Starting new HTTPS connection (1): api.tikapi.io:443
+2023-09-26 23:50:07,438 - DEBUG - https://api.tikapi.io:443 "GET /public/search/users?query=Revlon&country=us HTTP/1.1" 200 None
+2023-09-27 05:44:43,799 - DEBUG - Starting new HTTPS connection (1): api.tikapi.io:443
+2023-09-27 05:44:49,115 - DEBUG - https://api.tikapi.io:443 "GET /public/search/users?query=fortnite&country=us HTTP/1.1" 200 None
