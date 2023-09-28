@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .tab-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .tab-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tab-button:hover {
+            background-color: #555;
+        }
+
+        .tab-content {
+            display: none;
+            width: 80%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .active-tab {
+            display: block;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, {{ username }}</h1>
+        <p>Email: {{ user_email }}</p>
+    </header>
+
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-button" data-tab="profile" onclick="openTab('profile')">Profile</button>
+            <button class="tab-button" data-tab="collected-data" onclick="openTab('collected-data')">Collected Data</button>
+            <button class="tab-button" data-tab="collect-new-data" onclick="openTab('collect-new-data')">Collect New Data</button>
+        </div>
+
+        <!-- Tab content: Profile -->
+        <div id="profile" class="tab-content">
+            <!-- Add your profile content here -->
+            <h2>User Profile</h2>
+            <!-- Add your profile information here -->
+        </div>
+
+        <!-- Tab content: Collected Data -->
+        <div id="collected-data" class="tab-content">
+            <h2>Scraped Data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Follower Count</th>
+                        <th>Nickname</th>
+                        <th>Signature</th>
+                        <th>UID</th>
+                        <th>Unique ID</th>
+                    </tr>
+                </thead>
+                <tbody id="collected-data-table-body">
+                    <!-- Data will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+<!-- Collect New Data -->
+<div id="collect-new-data" class="tabcontent">
+    <h2>Collect New Data</h2>
+    <form id="collect-data-form" method="POST" action="/scrape_data" style="display:none;">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        
+        <!-- Country -->
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br>
+
+        <!-- Min Followers -->
+        <label for="min_followers">Min Followers:</label>
+        <input type="number" id="min_followers" name="min_followers" required><br>
+
+        <!-- Max Followers -->
+        <label for="max_followers">Max Followers:</label>
+        <input type="number" id="max_followers" name="max_followers" required><br>
+
+        <!-- Tags -->
+        <label for="tags">Tags:</label>
+        <input type="text" id="tags" name="tags" required><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Scrape Data">
+    </form>
+</div>
+
+    <footer>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </footer>
+
+    <script>
+        // Function to update the table with collected data
+        function updateCollectedData(data) {
+            const tableBody = document.querySelector('#collected-data-table-body');
+            tableBody.innerHTML = ''; // Clear existing data
+
+            // Iterate over the data and add rows to the table
+            data.forEach(user => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${user.follower_count}</td>
+                    <td>${user.nickname}</td>
+                    <td>${user.signature}</td>
+                    <td>${user.uid}</td>
+                    <td>${user.unique_id}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Fetch and update collected data when the page loads
+        fetch("/get_collected_data")
+            .then(response => response.json())
+            .then(data => {
+                updateCollectedData(data);
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
+
+        // Additional code that was outside the script tags
+        // Note: I've commented it out because it references an undefined function 'updateTable'
+        /*
+        .then(data => {
+            updateTable(data);
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+        });
+        */
+    </script>
+	<script src="/static/scripts.js"></script>
+
+</body>
