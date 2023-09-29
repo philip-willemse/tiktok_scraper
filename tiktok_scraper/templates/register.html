@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Add CSS styles for button alignment */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form method="POST" action="{{ url_for('register') }}">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+            </div>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <div class="button-container">
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+            </div>
+        </form>
+
+      <!-- Registration success/error messages -->
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="message-container">
+            {% for message in messages %}
+                {% if 'error' in message %}
+                    <p class="error-message">{{ message }}</p>
+                {% else %}
+                    <p class="success-message">{{ message }}</p>
+                    <!-- Add a conditional block to display the verification link -->
+                    {% if 'successful' in message %}
+                        <p>Registration successful! Check your email for a verification link to activate your account.</p>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
